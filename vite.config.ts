@@ -19,7 +19,7 @@ export default defineConfig({
         target: 'http://localhost:8051',
         changeOrigin: true,
         rewrite: (path) => {
-          console.log('请求的原始路径:', path) // 调试输出
+          console.log('请求:', path) // 调试输出
           return path.replace(/^\/api/, '')
         },
       },
